@@ -1,0 +1,583 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=us-ascii">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.1  (FreeBSD/amd64)">
+	<META NAME="CREATED" CONTENT="20200221;1222400">
+	<META NAME="CHANGED" CONTENT="0;0">
+		<link rel="stylesheet" href= "{{ url_for('static',filename='css/style.css') }}">
+		<script src="https://unpkg.com/hrjs"></script>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR" STYLE="border: none; padding: 0in">
+	<div id="navbar">
+		<a href="./p2.html">Next</a>
+	</div>
+	<div id="hintbox"></div>
+	<div id="page">
+<P STYLE="margin-left: 2.42in; margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><B>T</B></SPAN></SPAN></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><B>he</B></SPAN></SPAN></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></SPAN></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><B>C++</B></SPAN></SPAN></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></SPAN></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><B>Language</B></SPAN></SPAN></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></SPAN></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US"><SPAN STYLE="font-style: normal"><B>Tutorial</B></SPAN></SPAN></FONT></SPAN></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.17in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.17in"><BR>
+</P>
+<P STYLE="margin-bottom: 0.03in; line-height: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-left: 2.59in; margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>B</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>as</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>i</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>cs</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>o</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>f</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>C</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>+</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Cambria, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>+</B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.04in; line-height: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-bottom: 0in; line-height: 100%"><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>Struct</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>ur</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>e</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6>
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>of</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6>
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>a</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6>
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>p</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>r</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>o</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>g</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>r</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>a</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=6><B>m</B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.1in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-right: 0.6in; margin-bottom: 0in; line-height: 107%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">Pr</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ob</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">bly
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">best
+way to start learning</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">mm</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ng</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">lan</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">g</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">uage</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">y
+w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">iting</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">am.</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">Ther</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">fore,
+here is our </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">irst
+prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">am:</FONT></FONT></FONT></P>
+<TABLE WIDTH=625 BORDER=1 BORDERCOLOR="#c0c0d0" CELLPADDING=0 CELLSPACING=1>
+	<COL WIDTH=309>
+	<COL WIDTH=311>
+	<TR VALIGN=TOP>
+		<TD WIDTH=309 HEIGHT=117 BGCOLOR="#efefff">
+			<P STYLE="margin-left: 0in; margin-top: 0.01in; margin-bottom: 0in">
+			<FONT COLOR="#006f00"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">//
+			my first program in C++</FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in"><BR><BR>
+			</P>
+			<P STYLE="margin-left: 0in; margin-right: 1.84in; margin-bottom: 0in">
+			<FONT COLOR="#4f006f"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#include
+			&lt;iostream&gt; </FONT></FONT></FONT><FONT COLOR="#0000b0"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">using
+			namespace </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">std;</FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in"><BR>
+			</P>
+			<P STYLE="margin-left: 0in; margin-right: 2.44in; margin-bottom: 0in">
+			<FONT COLOR="#0000b0"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">int
+			</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">main
+			() {</FONT></FONT></FONT></P>
+			<P STYLE="margin-left: 0.14in; margin-right: 1.5in; margin-bottom: 0in">
+			<FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">cout
+			&lt;&lt; </FONT></FONT></FONT><FONT COLOR="#5f002f"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">&quot;Hello
+			World!&quot;</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">;
+			</FONT></FONT></FONT><FONT COLOR="#0000b0"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">return
+			</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">0;</FONT></FONT></FONT></P>
+			<P STYLE="margin-left: 0in"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><U>}</U></FONT></FONT></FONT><FONT COLOR="#c0c0d0"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><U>	</U></FONT></FONT></FONT><FONT COLOR="#c0c0d0"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><U>
+			</U></FONT></FONT></FONT>
+			</P>
+		</TD>
+		<TD WIDTH=311 BGCOLOR="#e7e7e7">
+			<P STYLE="margin-left: 0.03in; margin-top: 0.01in"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">Hello
+			World!</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0.05in; line-height: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-right: 0.4in; margin-bottom: 0in; line-height: 99%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">The</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">irst
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">anel</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">shows
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">source</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">code
+for our f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rst</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">program.
+The</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">second
+one s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">h</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s
+the r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">sult
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">am</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">once
+c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">il</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">and
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">xe</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ut</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d.
+The </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ay</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">to
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">dit
+and c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">pile
+a </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rogram
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">epends
+on</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+compiler you</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">are</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">using.
+D</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ding
+on</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">heth</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">it
+has a Dev</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">l</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">pment
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">I</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">nt</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+or not a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d
+on</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">its
+version. </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">C</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">onsult
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">compilers</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">section
+and the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">manual
+or</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">help</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">included
+with your </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ompiler</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">yo</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">u
+have doubts on</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">how</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">co</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">pile</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+C++</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">con</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ole</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.03in; line-height: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-right: 0.46in; margin-bottom: 0in; line-height: 99%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">The</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">v</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ous
+program</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">y</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ical</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">program</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">that</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">progra</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">mer
+app</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">entices
+write for</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">irst</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">time,
+and its result is the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+pr</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">inting
+on</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">sc</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">een</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">of
+the &quot;Hello</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">World!&quot;
+sente</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ce.</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">I</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t
+is one</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+simpl</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">st
+p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">og</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">hat
+can </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ritten
+in C</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">++</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">,
+but it alrea</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">y</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ontains</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">he</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">unda</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ental
+c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">mp</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">nents
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">hat
+e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">v</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ery
+C++ prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">am
+has. We</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">are
+g</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ing
+to lo</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">k
+line by line</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">at
+the code we have j</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">u</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">st
+written:</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.03in; line-height: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-bottom: 0in; line-height: 103%"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>//</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>my</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>first</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>program</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>in</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>C++</B></FONT></FONT></FONT></P>
+<P STYLE="margin-left: 0.5in; margin-right: 0.46in; margin-bottom: 0in; line-height: 99%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">This</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+comment line. </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">A</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ll
+lines be</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">g</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">inning
+with two slash </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">gns</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">(</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">//</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">)
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">re
+c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">nsi</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ered
+co</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ments</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">and
+do</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">not
+have</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">any
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ffect
+on</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">h</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">vior
+of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+program. The</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">mmer
+can u</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">them
+to include</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">hort
+e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">xp</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">lanations
+or observations within the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">urce
+code itsel</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">.
+In this</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">case,
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">line</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ri</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f
+d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">scription
+of what </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ur
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.01in; line-height: 0.1in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-bottom: 0in; line-height: 103%"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>#include</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>&lt;iostream&gt;</B></FONT></FONT></FONT></P>
+<P STYLE="margin-left: 0.5in; margin-right: 0.47in; margin-bottom: 0in; line-height: 99%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">Lines</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">beginning</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ith
+a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">hash
+s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">gn
+(</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">)
+a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+dire</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">tives
+for the prep</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ocessor.</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">They
+are</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ot
+re</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">g</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ular</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">code
+lines with </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">xp</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">essions
+but indications</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">for
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">co</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">pile</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">'s
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">reprocesso</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">.
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">I</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n
+this case the </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ctive</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#include
+&lt;iostream</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">&gt;</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">tells</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">epro</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">essor</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">to
+include the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">io</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ream
+s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ndard
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ile.
+This speci</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ic
+file</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">(</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">tream)
+includes</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+declarations</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">of
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">basic</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">stand</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rd
+input-output lib</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">y
+in</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">C</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+,
+and it is</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">inclu</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ed
+b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">cau</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">its
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">unctionality</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">going</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o
+be u</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ed</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">lat</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">in
+the </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rogram.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.01in; line-height: 0.1in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-bottom: 0in; line-height: 102%"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>using</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>namespace</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>std;</B></FONT></FONT></FONT></P>
+<P STYLE="margin-left: 0.5in; margin-right: 0.48in; margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">All
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">lements
+of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+stand</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rd
+C++</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">li</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rary</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">eclared
+within what is</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">called
+a nam</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">sp</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ce,</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+names</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ace
+with the name </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt"><I>st</I></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt"><I>d</I></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">.
+So in order to acc</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ss
+its </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">un</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">tionality</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+de</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">la</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+with this e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">x</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">pr</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ssion</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">that
+we will be using</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+entities. This</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">line</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is
+very fre</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">q</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">u</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ent
+in</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">C</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+
+programs that u</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+standa</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d
+libr</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">y</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">,
+and</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">in
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ct
+it will be</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">included</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n
+m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">st
+of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">u</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rce
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">odes</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">cluded
+in these tuto</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ials.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.01in; line-height: 0.1in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0in; margin-bottom: 0in; line-height: 102%"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>int</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>main</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><B>()</B></FONT></FONT></FONT></P>
+<P STYLE="margin-left: 0.5in; margin-right: 0.39in; margin-bottom: 0in; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">This</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">line</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">cor</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">esponds
+to the </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">g</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">inning</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+defi</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ition</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">h</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">main</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">unction.
+The</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">main</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">function
+is</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">h</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">oint
+by </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">h</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">re</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">all</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">C++
+programs s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t
+their execution, i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">dependently</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f
+its location</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ithin
+the</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">sou</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ce
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ode.</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">I</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t
+d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">es</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">not
+matter </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">heth</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">th</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">re</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">are
+other </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">unctions
+with </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">h</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">er</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">na</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">es
+defined before or</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">fter</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">it
+- the inst</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">uctions</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">contained</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">within
+this</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">unction's
+definition</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ill
+alwa</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">y</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">the
+first </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o
+be </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">x</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">cuted
+in any C</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+
+prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">m.</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">For</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">that
+same reason, it is ess</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ntial
+that all C</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">+
+prog</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ams</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">h</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ve
+a </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">mai</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">u</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">nction.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.03in; line-height: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0.5in; margin-right: 0.49in; margin-bottom: 0in; line-height: 99%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">The</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">word</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">mai</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">is
+f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">llowed
+in </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">he
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ode
+by</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+pa</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r
+of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">parenth</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ses</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">(</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">()</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">).
+That is because</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">it
+is</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">unction
+d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">claration:</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">I</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n
+C++,</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">what
+diffe</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">entiates</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a
+function</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">decl</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ration</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">from
+other types of exp</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">sions</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">re</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">t</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">he</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">se
+pa</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">entheses</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">that</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">llow</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">its</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">me.</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">Optionally,</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">these
+p</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">rentheses
+may enclose a</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">list</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">of</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">pa</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">amete</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s
+with</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">i</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n
+them.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.03in; line-height: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-left: 0.5in; margin-right: 0.5in; margin-bottom: 0in; line-height: 97%">
+<FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">R</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ight
+aft</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r
+these parenthes</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">we
+can find the body of the main function </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">nclosed
+in</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">b</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">r</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ac</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">s
+(</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">{}</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">).
+What is c</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">ntained
+within these</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">braces
+is </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">w</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">hat
+the </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">f</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">unction</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">o</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">es
+wh</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">n
+it is ex</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">cut</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">e</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=1 STYLE="font-size: 8pt">d.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.17in"><BR>
+</P>
+</div>
+<script>
+	new HR("#page", {
+	  highlight: [" return "," function ","programming"," character "," int "," file "," errors "," comment ","cout","preprocessor","#include","directives","namespace"," main ","iostream"," error "," compiler "," identifiers "," variable "," memory "," cast "," bytes "," long "," integer "," float "," double "," unsigned "],
+	  backgroundColor: "#B4FFEB"
+	}).hr();
+
+	function readTextFile(file, callback) {
+		var rawFile = new XMLHttpRequest();
+		rawFile.overrideMimeType("application/json");
+		rawFile.open("GET", file, true);
+		rawFile.onreadystatechange = function() {
+			if (rawFile.readyState === 4 && rawFile.status == "200") {
+				callback(rawFile.responseText);
+			}
+		}
+		rawFile.send(null);
+	}
+
+	//usage:
+	// var data = 5
+	readTextFile("./static/js/out.json", function(text){
+		data = JSON.parse(text);
+		var coll = {}
+	// var content = JSON.parse(data)
+		var text = document.getElementById("page").innerText
+		text.replace(/return|function|programming|character|int|file|errors|comment|cout|preprocessor|#include|directives|namespace|main|iostream|error|compiler|identifiers|variable|memory|cast|bytes|long|integer|float|double|unsigned/gi,(val)=>{
+			coll[val] = 1
+			console.log(val)
+		})
+		console.log(data)
+		console.log(coll)
+		for (var key in coll){
+			// <div id="hint">
+			// 	<strong>cue</strong>
+			// 	this is a testing example</br>
+			// </div>
+			// <div id="hintbox">
+			// 	<div id="hint"></div>
+			// </div>
+			if(data.hasOwnProperty(key)){
+				// console.log(key)
+				var node = document.createElement("div")
+				node.id = "hover"
+				var node_image = document.createElement("div")
+				node_image.id = "image"
+				var image = document.createElement("img")
+				image.src = "./static/css/bulb.png"
+				node_image.appendChild(image)
+				node.appendChild(node_image)
+				var node_hint = document.createElement("div");
+				node_hint.id = "hint"
+				var node_title = document.createElement("strong");
+				var node_break = document.createElement("br");
+				var textnode_title = document.createTextNode(key);
+				var textnode_content = document.createTextNode(data[key]);
+				node_title.appendChild(textnode_title);
+				node_hint.appendChild(node_title);
+				node_hint.appendChild(textnode_content);
+				node_hint.appendChild(node_break);
+				node.appendChild(node_hint)
+				if(key=='cout'){
+					var hover_node = document.createElement("div")
+					hover_node.id = "hover-text"
+					var text = "cout<< 'Mr. Bhadra(Shubhankar )' << endl;"
+					var text_node = document.createTextNode(text)
+					hover_node.appendChild(text_node)
+					node.appendChild(hover_node)
+				}
+				document.getElementById("hintbox").appendChild(node);
+			}
+		}
+	});
+</script>
+</BODY>
+</HTML>

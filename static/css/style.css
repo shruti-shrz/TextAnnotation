@@ -1,0 +1,517 @@
+body {
+    margin: 20px;
+    background-color: #ffffff;
+  }
+  /* ========== Text Styles ========== */
+  hr { color: #000000}
+  body, table, span.rvts0 /* Font Style */
+  {
+   font-size: 12pt;
+   font-family: 'Verdana', 'Geneva', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   color: #000000;
+   text-decoration: none;
+  }
+  span.rvts1
+  {
+   font-size: 8pt;
+  }
+  span.rvts2
+  {
+   font-size: 10pt;
+  }
+  span.rvts3
+  {
+   font-size: 16pt;
+   font-family: 'Cambria';
+   font-weight: bold;
+  }
+  span.rvts4
+  {
+   font-size: 24pt;
+   font-weight: bold;
+  }
+  span.rvts5
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+  }
+  span.rvts6
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #006f00;
+  }
+  span.rvts7
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #4f006f;
+  }
+  span.rvts8
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #0000b0;
+  }
+  span.rvts9
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #000000;
+  }
+  span.rvts10
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #5f002f;
+  }
+  span.rvts11
+  {
+   font-size: 8pt;
+  }
+  span.rvts12
+  {
+   font-size: 7pt;
+  }
+  span.rvts13
+  {
+   font-size: 11.5pt;
+  }
+  span.rvts14
+  {
+   font-size: 11pt;
+  }
+  span.rvts15
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   font-weight: bold;
+  }
+  span.rvts16
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+  }
+  span.rvts17
+  {
+   font-size: 8pt;
+   font-style: italic;
+  }
+  span.rvts18
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   letter-spacing: -4px;
+  }
+  span.rvts19
+  {
+   font-size: 10pt;
+  }
+  span.rvts20
+  {
+   font-size: 10.5pt;
+  }
+  span.rvts21
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   letter-spacing: -5px;
+  }
+  span.rvts22
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #0000b0;
+  }
+  span.rvts23
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #000000;
+  }
+  span.rvts24
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #5f002f;
+  }
+  span.rvts25
+  {
+  }
+  span.rvts26
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #006f00;
+  }
+  span.rvts27
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #4f006f;
+  }
+  span.rvts28
+  {
+   font-size: 7.5pt;
+   font-family: 'Courier New', 'Courier', monospace;
+  }
+  span.rvts29
+  {
+   font-size: 13.5pt;
+   font-weight: bold;
+  }
+  span.rvts30
+  {
+   font-size: 7.5pt;
+  }
+  span.rvts31
+  {
+   font-size: 8pt;
+   font-family: 'Courier New', 'Courier', monospace;
+   color: #5f002f;
+   letter-spacing: -1px;
+  }
+  span.rvts32
+  {
+   font-size: 24pt;
+   font-weight: bold;
+  }
+  span.rvts33
+  {
+   font-size: 11pt;
+   font-family: 'Calibri';
+  }
+  /* ========== Para Styles ========== */
+  p,ul,ol /* Paragraph Style */
+  {
+   text-align: left;
+   text-indent: 0px;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+  }
+  .rvps1
+  {
+   line-height: 0.95;
+   margin: 0px 10px 0px 8px;
+  }
+  .rvps2
+  {
+   text-align: center;
+   margin: 18px 104px 0px 102px;
+  }
+  .rvps3
+  {
+   margin: 20px 0px 0px 8px;
+  }
+  .rvps4
+  {
+   margin: 1px 0px 0px 0px;
+  }
+  .rvps5
+  {
+   margin: 0px 182px 0px 0px;
+  }
+  .rvps6
+  {
+   line-height: 12px;
+  }
+  .rvps7
+  {
+   text-indent: -1px;
+   margin: 1px 150px 0px 13px;
+  }
+  .rvps8
+  {
+   margin: 10px 30px 0px 8px;
+  }
+  .rvps9
+  {
+   margin: 7px 11px 0px 8px;
+  }
+  .rvps10
+  {
+   margin: 1px 17px 0px 8px;
+  }
+  .rvps11
+  {
+   margin: 0px 0px 0px 8px;
+  }
+  .rvps12
+  {
+   margin: 1px 17px 0px 56px;
+  }
+  .rvps13
+  {
+   margin: 10px 0px 0px 8px;
+  }
+  .rvps14
+  {
+   margin: 1px 26px 0px 56px;
+  }
+  .rvps15
+  {
+   text-indent: -1px;
+   line-height: 0.95;
+   margin: 1px 20px 0px 56px;
+  }
+  .rvps16
+  {
+   margin: 1px 18px 0px 56px;
+  }
+  .rvps17
+  {
+   margin: 1px 10px 0px 56px;
+  }
+  .rvps18
+  {
+   line-height: 0.95;
+   margin: 0px 19px 0px 56px;
+  }
+  .rvps19
+  {
+   text-indent: -1px;
+   line-height: 0.95;
+   margin: 0px 20px 0px 56px;
+  }
+  .rvps20
+  {
+   margin: 1px 21px 0px 56px;
+  }
+  .rvps21
+  {
+   text-align: justify;
+   text-justify: inter-word;
+   text-align-last: auto;
+   line-height: 0.95;
+   margin: 0px 17px 0px 56px;
+  }
+  .rvps22
+  {
+   line-height: 0.95;
+   margin: 0px 13px 0px 56px;
+  }
+  .rvps23
+  {
+   line-height: 0.95;
+   margin: 0px 14px 0px 56px;
+  }
+  .rvps24
+  {
+   margin: 1px 0px 0px 8px;
+  }
+  .rvps25
+  {
+   margin: 0px 12px 0px 8px;
+  }
+  .rvps26
+  {
+   line-height: 0.95;
+   margin: 0px 14px 0px 8px;
+  }
+  .rvps27
+  {
+   line-height: 12px;
+   margin: 1px 0px 0px 1px;
+  }
+  .rvps28
+  {
+   line-height: 12px;
+   margin: 0px 0px 0px 1px;
+  }
+  .rvps29
+  {
+   text-indent: -1px;
+   margin: 1px 0px 0px 14px;
+  }
+  .rvps30
+  {
+   margin: 0px 0px 0px 1px;
+  }
+  .rvps31
+  {
+   margin: 7px 0px 0px 8px;
+  }
+  .rvps32
+  {
+   margin: 1px 0px 0px 1px;
+  }
+  .rvps33
+  {
+   line-height: 0.95;
+   margin: 0px 27px 0px 8px;
+  }
+  .rvps34
+  {
+   margin: 0px 0px 0px 8px;
+  }
+  .rvps35
+  {
+   margin: 1px 119px 0px 13px;
+  }
+  .rvps36
+  {
+   margin: 0px 0px 0px 7px;
+  }
+  .rvps37
+  {
+   margin: 7px 13px 0px 8px;
+  }
+  .rvps38
+  {
+   line-height: 12px;
+   margin: 0px 0px 0px 14px;
+  }
+  .rvps39
+  {
+   text-indent: 13px;
+   margin: 1px 51px 0px 14px;
+  }
+  .rvps40
+  {
+   text-indent: 13px;
+   margin: 0px 0px 0px 14px;
+  }
+  .rvps41
+  {
+   text-align: justify;
+   text-justify: inter-word;
+   text-align-last: auto;
+   margin: 7px 0px 0px 8px;
+  }
+  .rvps42
+  {
+   text-align: justify;
+   text-justify: inter-word;
+   text-align-last: auto;
+   line-height: 0.95;
+   margin: 0px 14px 0px 8px;
+  }
+  .rvps43
+  {
+   text-align: justify;
+   text-justify: inter-word;
+   text-align-last: auto;
+   line-height: 0.95;
+   margin: 19px 13px 0px 8px;
+  }
+  .rvps44
+  {
+   text-align: justify;
+   text-justify: inter-word;
+   text-align-last: auto;
+   margin: 1px 0px 0px 8px;
+  }
+  .rvps45
+  {
+   margin: 7px 18px 0px 8px;
+  }
+  .rvps46
+  {
+   line-height: 12px;
+   margin: 0px 0px 0px 8px;
+  }
+  .rvps47
+  {
+   text-indent: -19px;
+   margin: 1px 138px 0px 19px;
+  }
+  .rvps48
+  {
+   line-height: 12px;
+   margin: 1px 0px 0px 0px;
+  }
+  .rvps49
+  {
+   text-indent: 13px;
+   margin: 0px 17px 0px 0px;
+  }
+  .rvps50
+  {
+   text-indent: 13px;
+   margin: 0px 16px 0px 0px;
+  }
+  .rvps51
+  {
+   margin: 0px 0px 0px 13px;
+  }
+  .rvps52
+  {
+   margin: 18px 0px 0px 8px;
+  }
+  .rvps53
+  {
+   margin: 10px 11px 0px 8px;
+  }
+  .rvps54
+  {
+   margin: 0px 10px 0px 8px;
+  }
+  .rvps55
+  {
+   line-height: 0.95;
+   margin: 0px 26px 0px 8px;
+  }
+  .rvps56
+  {
+   margin: 1px 0px 0px 1px;
+  }
+  .rvps57
+  {
+   text-indent: -1px;
+   margin: 7px 19px 0px 8px;
+  }
+  .rvps58
+  {
+   line-height: 0.95;
+   margin: 1px 19px 0px 8px;
+  }
+  .rvps59
+  {
+   line-height: 1.15;
+   margin: 0px 0px 13px 0px;
+  }
+  #page{
+    width: 1000px;
+    float: left;
+  }
+  #hintbox{
+    float: right;
+    top: 120px;
+    position: relative;
+    width: 400px;
+    font-size: 12px;
+  }
+  #hint{
+    background-color: bisque;
+    text-align: center;
+    padding: 5px;
+    margin:10px;
+    float: inherit;
+  }
+  #navbar{
+    text-align: end;
+  }
+  #image{
+    position: relati ve;
+    float: left;
+    margin: 10px 0px 10px 10px;
+  }
+  img{
+    width: 22px;
+  }
+  #hover #hover-text{
+    visibility: hidden;
+    width: 200px;
+    background-color: #eab170;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  #hover:hover #hover-text{
+    visibility: visible;
+  }

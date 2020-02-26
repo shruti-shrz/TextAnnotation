@@ -1,0 +1,720 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=us-ascii">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.1  (FreeBSD/amd64)">
+	<META NAME="CREATED" CONTENT="20200221;1322600">
+	<META NAME="CHANGED" CONTENT="0;0">
+		<link rel="stylesheet" href= "{{ url_for('static',filename='css/style.css') }}">
+		<script src="https://unpkg.com/hrjs"></script>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR" STYLE="border: none; padding: 0in">
+	<div id="navbar">
+		<a href="./p5.html">Previous</a>
+	</div>
+	<div id="hintbox"></div>
+	<div id="page">
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto"><A NAME="page1"></A>
+<SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>The
+C++ Language Tutorial</B></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.01in"><BR>
+</P>
+<DIV ID="Section1" DIR="LTR">
+	<P STYLE="margin-bottom: 0in; line-height: 0.14in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.14in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.27in"><BR>
+	</P>
+	<P STYLE="margin-left: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%; text-decoration: none">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Your
+	compiler may also include some additional specific reserved
+	keywords.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.16in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.01in; margin-right: 0.04in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 92%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><B>Very
+	important: </B></FONT><FONT FACE="Verdana, serif">The C++ language
+	is a &quot;case sensitive&quot; language. That means that an
+	identifier written in capital</FONT><FONT FACE="Verdana, serif"><B>
+	</B></FONT><FONT FACE="Verdana, serif">letters is not equivalent to
+	another one with the same name but written in small letters. Thus,
+	for example, the </FONT><FONT FACE="Courier New, serif">RESULT
+	</FONT><FONT FACE="Verdana, serif">variable is not the same as the</FONT><FONT FACE="Courier New, serif">
+	result </FONT><FONT FACE="Verdana, serif">variable or the</FONT><FONT FACE="Courier New, serif">
+	Result </FONT><FONT FACE="Verdana, serif">variable. These are three
+	different variable</FONT><FONT FACE="Courier New, serif">
+	</FONT><FONT FACE="Verdana, serif">identifiers.</FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.19in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.01in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=4 STYLE="font-size: 13pt"><B><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Fundamental
+	data types</SPAN></SPAN></B></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.23in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.01in; margin-right: 0.06in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 92%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">When
+	programming, we store the variables in our computer's memory, but
+	the computer has to know what kind of data we want to store in them,
+	since it is not going to occupy the same amount of memory to store a
+	simple number than to store a single letter or a large number, and
+	they are not going to be interpreted the same way.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.22in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.01in; margin-right: 0.04in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 94%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">The
+	memory in our computers is organized in bytes. A byte is the minimum
+	amount of memory that we can manage in C++. A byte can store a
+	relatively small amount of data: one single character or a small
+	integer (generally an integer between 0 and 255). In addition, the
+	computer can manipulate more complex data types that come from
+	grouping several bytes, such as long numbers or non-integer numbers.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.23in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.01in; margin-right: 0.13in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 89%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Next
+	you have a summary of the basic fundamental data types in C++, as
+	well as the range of values that can be represented with each one:</SPAN></SPAN></FONT></FONT></FONT></P>
+	</P>
+		<TABLE WIDTH=721 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=2 CELLSPACING=0 FRAME=LHS>
+			<COL WIDTH=92>
+			<COL WIDTH=279>
+			<COL WIDTH=59>
+			<COL WIDTH=180>
+			<COL WIDTH=91>
+			<TR VALIGN=BOTTOM>
+				<TD WIDTH=92 HEIGHT=11 BGCOLOR="#e0e0e0">
+					<P ALIGN=LEFT STYLE="margin-left: 0.32in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+					<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Name</B></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+				</TD>
+				<TD WIDTH=279 BGCOLOR="#e0e0e0">
+					<P ALIGN=LEFT STYLE="margin-left: 1.11in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+					<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Description</B></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+				</TD>
+				<TD WIDTH=59 BGCOLOR="#e0e0e0">
+					<P ALIGN=LEFT STYLE="margin-left: 0.15in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+					<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Size*</B></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+				</TD>
+				<TD WIDTH=180 BGCOLOR="#e0e0e0">
+					<P ALIGN=LEFT STYLE="margin-left: 0.72in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+					<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Range*</B></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+				</TD>
+				<TD WIDTH=91>
+					<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+					<BR>
+					</P>
+				</TD>
+			</TR>
+		</TABLE>
+	<!-- </CENTER> -->
+	<TABLE WIDTH=721 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=2 CELLSPACING=0 FRAME=LHS RULES=COLS STYLE="page-break-before: auto; page-break-after: auto">
+		<COL WIDTH=92>
+		<COL WIDTH=279>
+		<COL WIDTH=59>
+		<COL WIDTH=180>
+		<COL WIDTH=91>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">char</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Character
+				or small integer.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">1byte</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">signed:
+				-128 to 127</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=3>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">unsigned:
+				0 to 255</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=3>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">short
+				int</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Short
+				Integer.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">2bytes</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">signed:
+				-32768 to 32767</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=3>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">(</FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">short</FONT></FONT><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">)</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">unsigned:
+				0 to 65535</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=3>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">signed:
+				-2147483648 to</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=9>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">int</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Integer.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">4bytes</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">2147483647</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=9>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">unsigned:
+				0 to 4294967295</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">signed:
+				-2147483648 to</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=9>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">long
+				int </FONT></FONT><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">(</FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">long</FONT></FONT><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">)</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Long
+				integer.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">4bytes</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">2147483647</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=9>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">unsigned:
+				0 to 4294967295</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=14>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">bool</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Boolean
+				value. It can take one of two values: true</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">1byte</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">true
+				or false</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=6>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 7pt">or
+				false.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">float</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Floating
+				point number.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">4bytes</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">+/-
+				3.4e +/- 38 (~7 digits)</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">double</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Double
+				precision floating point number.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">8bytes</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">+/-
+				1.7e +/- 308 (~15 digits)</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">long
+				double</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Long
+				double precision floating point number.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">8bytes</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">+/-
+				1.7e +/- 308 (~15 digits)</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=10>
+				<P ALIGN=LEFT STYLE="margin-left: 0.01in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">wchar_t</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">Wide
+				character.</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">2
+				</FONT></FONT><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><I>or</I></FONT></FONT><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">
+				4</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">1
+				wide character</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=92 HEIGHT=3>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=279>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=59>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt">bytes</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=180>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+			<TD WIDTH=91>
+				<P ALIGN=LEFT STYLE="background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; text-decoration: none; page-break-after: auto">
+				<BR>
+				</P>
+			</TD>
+		</TR>
+	</TABLE>
+	<P STYLE="margin-bottom: 0in; line-height: 0.21in"><BR>
+	</P>
+	<OL>
+		<LI><P STYLE="margin-right: 0.13in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 96%; text-decoration: none">
+		<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">The
+		values of the columns <B>Size</B> and <B>Range</B> depend on the
+		system the program is compiled for. The values shown above are
+		those found on most 32-bit systems. But for other systems, the
+		general specification is that <FONT FACE="Courier New, serif">int</FONT>
+		has the natural size suggested by the system architecture (one
+		&quot;<I>word</I>&quot;) and the four integer types <FONT FACE="Courier New, serif">char</FONT>,
+		<FONT FACE="Courier New, serif">short</FONT>, <FONT FACE="Courier New, serif">int
+		</FONT>and<FONT FACE="Courier New, serif"> long </FONT>must each
+		one be at least as large as the one preceding it, with<FONT FACE="Courier New, serif">
+		char </FONT>being always 1 byte in size.<FONT FACE="Courier New, serif">
+		</FONT>The same applies to the floating point types <FONT FACE="Courier New, serif">float</FONT>,
+		<FONT FACE="Courier New, serif">double</FONT> and <FONT FACE="Courier New, serif">long
+		double</FONT>, where each one must provide at least as much
+		precision as the preceding one.</SPAN></SPAN></FONT></FONT></FONT></P>
+	</OL>
+	<P STYLE="margin-bottom: 0in; line-height: 0.19in"><BR>
+	</P>
+	<P STYLE="margin-left: 0.01in; margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=4 STYLE="font-size: 13pt"><B><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Declaration
+	of variables</SPAN></SPAN></B></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.23in"><BR>
+	</P>
+	<P ALIGN=JUSTIFY STYLE="margin-left: 0.01in; margin-right: 0.04in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 92%; text-decoration: none">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">In
+	order to use a variable in C++, we must first declare it specifying
+	which data type we want it to be. The syntax to declare a new
+	variable is to write the specifier of the desired data type (like
+	int, bool, float...) followed by a valid variable identifier. For
+	example:</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.17in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.17in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.17in"><BR>
+	</P>
+</DIV>
+</div>
+<script>
+	new HR("#page", {
+	  highlight: [" return "," function "," character "," int "," file "," errors "," comment ","cout"," preprocessor ","#include","directives","namespace"," main ","iostream"," error "," compiler "," identifiers "," variable "," memory "," cast "," bytes "," long "," integer "," float "," double "," unsigned "],
+	  backgroundColor: "#B4FFEB"
+	}).hr();
+
+	function readTextFile(file, callback) {
+		var rawFile = new XMLHttpRequest();
+		rawFile.overrideMimeType("application/json");
+		rawFile.open("GET", file, true);
+		rawFile.onreadystatechange = function() {
+			if (rawFile.readyState === 4 && rawFile.status == "200") {
+				callback(rawFile.responseText);
+			}
+		}
+		rawFile.send(null);
+	}
+
+	//usage:
+	// var data = 5
+	readTextFile("./static/js/out.json", function(text){
+		data = JSON.parse(text);
+		var coll = {}
+	// var content = JSON.parse(data)
+		var text = document.getElementById("page").innerText
+		text.replace(/return|comment|integer|int|file|errors|cout|preprocessor|#include|directives|namespace|main|iostream|error|compiler|identifiers|variable|memory|cast|bytes|long|character|float|double|unsigned/gi,(val)=>{
+			coll[val] = 1
+			console.log(val)
+		})
+		// console.log(data)
+		// console.log(coll)
+		for (var key in coll){
+			// <div id="hint">
+			// 	<strong>cue</strong>
+			// 	this is a testing example</br>
+			// </div>
+			// <div id="hintbox">
+			// 	<div id="hint"></div>
+			// </div>
+			if(data.hasOwnProperty(key)){
+				// console.log(key)
+				var node = document.createElement("div")
+				var node_image = document.createElement("div")
+				node_image.id = "image"
+				var image = document.createElement("img")
+				image.src = "./static/css/bulb.png"
+				node_image.appendChild(image)
+				node.appendChild(node_image)
+				var node_hint = document.createElement("div");
+				node_hint.id = "hint"
+				var node_title = document.createElement("strong");
+				var node_break = document.createElement("br");
+				var textnode_title = document.createTextNode(key);
+				var textnode_content = document.createTextNode(data[key]);
+				node_title.appendChild(textnode_title);
+				node_hint.appendChild(node_title);
+				node_hint.appendChild(textnode_content);
+				node_hint.appendChild(node_break);
+				node.appendChild(node_hint)
+				document.getElementById("hintbox").appendChild(node);
+			}
+		}
+	});
+</script>
+</BODY>
+</HTML>
