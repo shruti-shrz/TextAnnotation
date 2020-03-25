@@ -1,0 +1,7 @@
+{
+   "cout":"#include <iostream></br>using namespace std;</br>int main( ) {</br>char ary[] = \"Welcome to C++ tutorial\";</br>cout << \"Value of ary is: \" << ary << endl;</br>}",
+    "include":"#include <iostream></br>using namespace std;</br>int main( ) {</br>char ary[] = \"Welcome to C++ tutorial\";</br>cout << \"Value of ary is: \" << ary << endl;</br>}",
+    "comment":"/*</br>void EventLoop();</br>void EventLoop();</br>/**/",
+    "return":"void printChars(char c, int count) {</br>for (int i=0; i<count; i++) {</br>cout << c;</br>}//end for</br></br>return;  // Optional because it's a void function</br>}//end printChars",
+    "integer":"(Datatype)int\t\t(size in bytes)4\t\t(Range)-2,147,483,648 to 2,147,483,647"
+}
