@@ -1,5 +1,6 @@
+import sys, os
 from flask import Flask, render_template, request
-
+from flask_frozen import Freezer
 app = Flask(__name__)
 
 @app.route('/')
@@ -21,10 +22,16 @@ def show5() -> 'html':
 @app.route('/p6.html')
 def show6() -> 'html':
     return render_template('./p6.html')
+
+freezer = Freezer(app)
 # @app
 
 # @app.route('/')
 # def show() -> 'html':
 #     return render_template('./index.html')
 
-app.run()
+if __name__ == "__main__":
+	if len(sys.argv) > 1 and sys.argv[1] == "build":
+		freezer.freeze()
+	else:
+		app.run(port=8000)
