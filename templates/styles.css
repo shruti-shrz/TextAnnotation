@@ -3,5 +3,10 @@
 }
 
 #hint{
-    float: left;
-}
+    background-color: bisque;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    margin:10px;
+    float: inherit;
+  }
