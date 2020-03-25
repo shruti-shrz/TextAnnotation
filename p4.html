@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=us-ascii">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.1  (FreeBSD/amd64)">
+	<META NAME="CREATED" CONTENT="20200221;1305600">
+	<META NAME="CHANGED" CONTENT="0;0">
+		<link rel="stylesheet" href= "{{ url_for('static',filename='css/style.css') }}">
+		<script src="https://unpkg.com/hrjs"></script>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR" STYLE="border: none; padding: 0in">
+	<div id="navbar">
+		<a href="./p3.html">Previous</a>
+		<a href="./p5.html">Next</a>
+	</div>
+	<div id="hintbox"></div>
+	<div id="page">
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto"><A NAME="page1"></A>
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Calibri, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>The
+C++ Language Tutorial</B></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.01in"><BR>
+</P>
+<DIV ID="Section1" DIR="LTR">
+	<P STYLE="margin-bottom: 0in; line-height: 0.14in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.14in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.26in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=6><B><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Variables.
+	Data Types.</SPAN></SPAN></B></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.13in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.03in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 96%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">The
+	usefulness of the &quot;Hello World&quot; programs shown in the
+	previous section is quite questionable. We had to write several
+	lines of code, compile them, and then execute the resulting program
+	just to obtain a simple sentence written on the screen as result. It
+	certainly would have been much faster to type the output sentence by
+	ourselves. However, programming is not limited only to printing
+	simple texts on the screen. In order to go a little further on and
+	to become able to write programs that perform useful tasks that
+	really save us work we need to introduce the concept of variable.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.22in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.01in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 94%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Let
+	us think that I ask you to retain the number 5 in your mental
+	memory, and then I ask you to memorize also the number 2 at the same
+	time. You have just stored two different values in your memory. Now,
+	if I ask you to add 1 to the first number I said, you should be
+	retaining the numbers 6 (that is 5+1) and 2 in your memory. Values
+	that we could now for example subtract and obtain 4 as result.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.22in"><BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.19in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 89%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">The
+	whole process that you have just done with your mental memory is a
+	simile of what a computer can do with two variables. The same
+	process can be expressed in C++ with the following instruction set:</SPAN></SPAN></FONT></FONT></FONT></P>
+	
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.22in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.18in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">a
+	= 5;</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.18in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 99%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt">b
+	= 2;</FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.18in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">a
+	= a + 1;</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-left: 0.18in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 99%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #efefff">result
+	= a - b;</SPAN></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.26in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.11in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 92%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Obviously,
+	this is a very simple example since we have only used two small
+	integer values, but consider that your computer can store millions
+	of numbers like these at the same time and conduct sophisticated
+	mathematical operations with them.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.19in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Therefore,
+	we can define a variable as a portion of memory to store a
+	determined value.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.22in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.13in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 92%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Each
+	variable needs an identifier that distinguishes it from the others,
+	for example, in the previous code the variable identifiers were <FONT FACE="Courier New, serif">a</FONT>,
+	<FONT FACE="Courier New, serif">b</FONT> and <FONT FACE="Courier New, serif">result</FONT>,
+	but we could have called the variables any names we wanted to
+	invent, as long as they were valid identifiers.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.19in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=4 STYLE="font-size: 13pt"><B><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Identifiers</SPAN></SPAN></B></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.23in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.06in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 96%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">A
+	valid identifier is a sequence of one or more letters, digits or
+	underscore characters (<FONT FACE="Courier New, serif">_</FONT>).
+	Neither spaces nor punctuation marks or symbols can be part of an
+	identifier. Only letters, digits and single underscore characters
+	are valid. In addition, variable identifiers always have to begin
+	with a letter. They can also begin with an underline character (<FONT FACE="Courier New, serif">_</FONT>
+	), but in some cases these may be reserved for compiler specific
+	keywords or external identifiers, as well as identifiers containing
+	two successive underscore characters anywhere. In no case they can
+	begin with a digit.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.22in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.06in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 92%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Another
+	rule that you have to consider when inventing your own identifiers
+	is that they cannot match any keyword of the C++ language nor your
+	compiler's specific ones, which are <I>reserved keywords</I>. The
+	standard reserved keywords are:</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.21in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.1in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 98%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">asm,
+	auto, bool, break, case, catch, char, class, const, const_cast,
+	continue, default, delete, do, double, dynamic_cast, else, enum,
+	explicit, export, extern, false, float, for, friend, goto, if,
+	inline, int, long, mutable, namespace, new, operator, private,
+	protected, public, register, reinterpret_cast, return, short,
+	signed, sizeof, static, static_cast, struct, switch, template, this,
+	throw, true, try, typedef, typeid, typename, union, unsigned, using,
+	virtual, void, volatile, wchar_t, while</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.23in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-right: 0.15in; margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 89%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Verdana, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">Additionally,
+	alternative representations for some operators cannot be used as
+	identifiers since they are reserved words under some circumstances:</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; line-height: 0.19in; page-break-inside: auto; page-break-before: auto; page-break-after: auto">
+	<BR>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; background: transparent; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; text-decoration: none; page-break-before: auto; page-break-after: auto">
+	<FONT COLOR="#000000"><FONT FACE="Courier New, serif"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: transparent"><SPAN STYLE="text-decoration: none">and,
+	and_eq, bitand, bitor, compl, not, not_eq, or, or_eq, xor, xor_eq</SPAN></SPAN></FONT></FONT></FONT></P>
+</DIV>
+<div id="section-2">
+	<P STYLE="margin-bottom: 0in; line-height: 0.14in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.14in"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0in; line-height: 0.26in"><BR>
+	</P>
+</div>
+	</div>
+	<script>
+		new HR("#page", {
+		  highlight: [" return "," function "," character "," int "," file "," errors "," comment ","cout"," preprocessor ","#include","directives","namespace"," main ","iostream"," error "," compiler "," identifiers "," variable "," memory "," cast "," bytes "," long "," integer "," float "," double "," unsigned "],
+		  backgroundColor: "#B4FFEB"
+		}).hr();
+	
+		function readTextFile(file, callback) {
+			var rawFile = new XMLHttpRequest();
+			rawFile.overrideMimeType("application/json");
+			rawFile.open("GET", file, true);
+			rawFile.onreadystatechange = function() {
+				if (rawFile.readyState === 4 && rawFile.status == "200") {
+					callback(rawFile.responseText);
+				}
+			}
+			rawFile.send(null);
+		}
+	
+		//usage:
+		// var data = 5
+		readTextFile("./static/js/out.json", function(text){
+			data = JSON.parse(text);
+			var coll = {}
+		// var content = JSON.parse(data)
+			var text = document.getElementById("page").innerText
+			text.replace(/return|function|character|int|file|errors|comment|cout|preprocessor|#include|directives|namespace|main|iostream|error|compiler|identifiers|variable|memory|cast|bytes|long|integer|float|double|unsigned/gi,(val)=>{
+				coll[val] = 1
+			})
+			console.log(data)
+			console.log(coll)
+			for (var key in coll){
+				// <div id="hint">
+				// 	<strong>cue</strong>
+				// 	this is a testing example</br>
+				// </div>
+				// <div id="hintbox">
+				// 	<div id="hint"></div>
+				// </div>
+				if(data.hasOwnProperty(key)){
+				// console.log(key)
+				var node = document.createElement("div")
+				var node_image = document.createElement("div")
+				node_image.id = "image"
+				var image = document.createElement("img")
+				image.src = "./static/css/bulb.png"
+				node_image.appendChild(image)
+				node.appendChild(node_image)
+				var node_hint = document.createElement("div");
+				node_hint.id = "hint"
+				var node_title = document.createElement("strong");
+				var node_break = document.createElement("br");
+				var textnode_title = document.createTextNode(key);
+				var textnode_content = document.createTextNode(data[key]);
+				node_title.appendChild(textnode_title);
+				node_hint.appendChild(node_title);
+				node_hint.appendChild(textnode_content);
+				node_hint.appendChild(node_break);
+				node.appendChild(node_hint)
+				document.getElementById("hintbox").appendChild(node);
+			}
+			}
+		});
+	</script>	
+</BODY>
+</HTML>
