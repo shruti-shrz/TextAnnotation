@@ -473,14 +473,14 @@ body {
    margin: 0px 0px 13px 0px;
   }
   #page{
-    width: 1000px;
+    width: 75%;
     float: left;
   }
   #hintbox{
     float: right;
     top: 120px;
     position: relative;
-    width: 30%;
+    width: 25%;
     font-size: 12px;
   }
   #hint{
