@@ -47,11 +47,17 @@ new HR("#page", {
               var node_break = document.createElement("br");
               var textnode_title = document.createTextNode(key);
               var textnode_content = document.createTextNode(data[key]);
+              var details = document.createElement("details");
+              var summary = document.createElement("summary");
+              var summary_text = document.createTextNode("Read More/Less...");
               node_title.appendChild(textnode_title);
+              summary.appendChild(summary_text);
+              details.appendChild(summary);
               node_hint.appendChild(node_title);
               node_hint.appendChild(node_break);
-              node_hint.appendChild(textnode_content);
-              node.appendChild(node_hint)
+              details.appendChild(textnode_content);
+              node_hint.appendChild(details);
+              node.appendChild(node_hint);
               if(example.hasOwnProperty(key)){
                   var hover_node = document.createElement("div")
                   hover_node.id = "hover-text"
