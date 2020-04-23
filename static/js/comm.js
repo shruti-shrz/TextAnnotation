@@ -46,7 +46,10 @@ new HR("#page", {
               var node_title = document.createElement("strong");
               var node_break = document.createElement("br");
               var textnode_title = document.createTextNode(key);
-              var textnode_content = document.createTextNode(data[key]);
+              var text = data[key];
+              var text_1 = document.createTextNode(text.substr(0,text.length/2));
+              var text_2 = document.createTextNode(text.substr(text.length/2));
+//               var textnode_content = document.createTextNode(data[key]);
               var details = document.createElement("details");
               var summary = document.createElement("summary");
               var summary_text = document.createTextNode("Read More/Less...");
@@ -55,7 +58,8 @@ new HR("#page", {
               details.appendChild(summary);
               node_hint.appendChild(node_title);
               node_hint.appendChild(node_break);
-              details.appendChild(textnode_content);
+              node_hint.appendChild(text_1);
+              details.appendChild(text_2);
               node_hint.appendChild(details);
               node.appendChild(node_hint);
               if(example.hasOwnProperty(key)){
