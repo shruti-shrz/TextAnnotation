@@ -15,8 +15,6 @@ new HR("#page", {
       rawFile.send(null);
   }
 
-  //usage:
-  // var data = 5
   readTextFile("./static/js/out.json", function(text){
       var example = {
           "cout":"#include <iostream><br>using namespace std;<br>int main( ) {<br>char ary[] = \"Welcome to C++ tutorial\";<br>cout << \"Value of ary is: \" << ary << endl;<br>}",
@@ -27,22 +25,12 @@ new HR("#page", {
       }
       data = JSON.parse(text);
       var coll = {}
-  // var content = JSON.parse(data)
+  
       var text = document.getElementById("page").innerText
       text.replace(/return|function|programming|character|int|file|errors|comment|cout|preprocessor|#include|directives|namespace|main|iostream|error|compiler|identifiers|variable|memory|cast|bytes|long|integer|float|double|unsigned/gi,(val)=>{
           coll[val] = 1
-          // console.log(val)
       })
-      // console.log(data)
-      // console.log(coll)
       for (var key in coll){
-          // <div id="hint">
-          // 	<strong>cue</strong>
-          // 	this is a testing example</br>
-          // </div>
-          // <div id="hintbox">
-          // 	<div id="hint"></div>
-          // </div>
           if(data.hasOwnProperty(key)){
               // console.log(key)
               var node = document.createElement("div")
@@ -68,8 +56,6 @@ new HR("#page", {
                   var hover_node = document.createElement("div")
                   hover_node.id = "hover-text"
                   var text = example[key]
-                  // var text_node = document.createTextNode(text)
-                  // hover_node.appendChild(text_node)
                   hover_node.innerHTML += text;
                   node.appendChild(hover_node)
               }
