@@ -47,8 +47,8 @@ new HR("#page", {
               var node_break = document.createElement("br");
               var textnode_title = document.createTextNode(key);
               var text = data[key];
-              var text_1 = document.createTextNode(text.substr(0,text.length/2));
-              var text_2 = document.createTextNode(text.substr(text.length/2));
+              var text_1 = document.createTextNode(text.substring(0,text.length/2));
+              var text_2 = document.createTextNode(text.substring(text.length/2));
 //               var textnode_content = document.createTextNode(data[key]);
               var details = document.createElement("details");
               var summary = document.createElement("summary");
