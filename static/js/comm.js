@@ -49,8 +49,8 @@ new HR("#page", {
               var textnode_content = document.createTextNode(data[key]);
               node_title.appendChild(textnode_title);
               node_hint.appendChild(node_title);
-              node_hint.appendChild(textnode_content);
               node_hint.appendChild(node_break);
+              node_hint.appendChild(textnode_content);
               node.appendChild(node_hint)
               if(example.hasOwnProperty(key)){
                   var hover_node = document.createElement("div")
