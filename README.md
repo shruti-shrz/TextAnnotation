@@ -1,6 +1,6 @@
 # Text-Annotation
 Dynamically providing hints on important topics of programming books for ease of understanding of users
-Built on *Flask* framework and uses *HTML* as well for browser renderings
+Built on *Flask* framework and uses *Javascript* as well for browser renderings
 
 
 ## Installation
